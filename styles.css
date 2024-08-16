@@ -1,16 +1,22 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f7f7f7;
     color: #333;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-weight: bold;
 }
 
 nav ul {
@@ -18,16 +24,16 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    gap: 20px;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
+    color: #333;
     font-weight: bold;
 }
 
@@ -35,21 +41,33 @@ nav ul li a:hover {
     color: #ff6347;
 }
 
+#hero {
+    padding: 100px 20px;
+    background-color: #f5e9e4;
+    text-align: center;
+    color: #333;
+    background-image: url('path-to-your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+#hero h1 {
+    font-size: 36px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 .section {
     padding: 50px 20px;
     text-align: center;
-    background-color: #fff;
+    background-color: white;
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#inicio {
-    background: linear-gradient(to right, #ff6347, #ff4500);
-    color: white;
-}
-
-.proyecto {
+.project {
     background-color: #eee;
     padding: 20px;
     margin: 20px 0;
@@ -58,8 +76,9 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: white;
+    color: #333;
     text-align: center;
     padding: 20px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
